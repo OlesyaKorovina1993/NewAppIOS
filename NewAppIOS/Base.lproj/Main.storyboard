@@ -17,17 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-DY-qZJ">
-                                <rect key="frame" x="156" y="417" width="104" height="86"/>
+                                <rect key="frame" x="155" y="405" width="104" height="86"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mup-Tj-NHL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-ua-ppU">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Авторизация"/>
+                                        <state key="normal" title="Регистрация"/>
+                                        <connections>
+                                            <segue destination="Spi-eO-sYk" kind="show" id="bH1-JT-jNa"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-ua-ppU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mup-Tj-NHL">
                                         <rect key="frame" x="0.0" y="53" width="104" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Регистрация"/>
+                                        <state key="normal" title="Авторизация"/>
+                                        <connections>
+                                            <segue destination="snM-1b-oTu" kind="show" id="ab4-Mv-uw6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -55,6 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="Wbg-cn-Hx6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M4o-ml-2nk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQS-hr-lJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,6 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="GaN-Dg-29l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8vT-l6-Ume"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ud3-ZZ-5tS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
