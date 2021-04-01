@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SigninViewController.swift
 //  NewAppIOS
 //
 //  Created by user on 01.04.2021.
@@ -7,19 +7,24 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignInViewController: UIViewController {
     
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
+
     @IBOutlet weak var emailTextField: UITextField!
     
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
+    
     
     @IBOutlet weak var errorLabel: UILabel!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +32,8 @@ class LoginViewController: UIViewController {
     }
     
 
-    @IBAction func loginButtonPressed(_ sender: Any) {
+    @IBAction func signInPressed(_ sender: Any) {
     }
+    
+
 }

@@ -17,7 +17,7 @@
 		CED395B4261615E500061BE7 /* Pods_NewAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFCC86125971D046AC3EA47 /* Pods_NewAppIOS.framework */; };
 		CED395B5261615E500061BE7 /* Pods_NewAppIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFCC86125971D046AC3EA47 /* Pods_NewAppIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CED395BF26161DE200061BE7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395BE26161DE200061BE7 /* AuthViewController.swift */; };
-		CED395C126161DF800061BE7 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C026161DF800061BE7 /* SigninViewController.swift */; };
+		CED395C126161DF800061BE7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C026161DF800061BE7 /* SignInViewController.swift */; };
 		CED395C326161E2000061BE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C226161E2000061BE7 /* LoginViewController.swift */; };
 		CED395C526161E5800061BE7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C426161E5800061BE7 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		CED395A62616137100061BE7 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED395A92616137F00061BE7 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		CED395BE26161DE200061BE7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		CED395C026161DF800061BE7 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		CED395C026161DF800061BE7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CED395C226161E2000061BE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED395C426161E5800061BE7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,7 @@
 				CED39574261551C900061BE7 /* ViewController.swift */,
 				CED395C426161E5800061BE7 /* PageViewController.swift */,
 				CED395C226161E2000061BE7 /* LoginViewController.swift */,
-				CED395C026161DF800061BE7 /* SigninViewController.swift */,
+				CED395C026161DF800061BE7 /* SignInViewController.swift */,
 				CED395BE26161DE200061BE7 /* AuthViewController.swift */,
 				CED39576261551C900061BE7 /* Main.storyboard */,
 				CED39579261551CA00061BE7 /* Assets.xcassets */,
@@ -248,7 +248,7 @@
 				CED395C326161E2000061BE7 /* LoginViewController.swift in Sources */,
 				CED395C526161E5800061BE7 /* PageViewController.swift in Sources */,
 				CED395BF26161DE200061BE7 /* AuthViewController.swift in Sources */,
-				CED395C126161DF800061BE7 /* SigninViewController.swift in Sources */,
+				CED395C126161DF800061BE7 /* SignInViewController.swift in Sources */,
 				CED39575261551C900061BE7 /* ViewController.swift in Sources */,
 				CED39571261551C900061BE7 /* AppDelegate.swift in Sources */,
 				CED39573261551C900061BE7 /* SceneDelegate.swift in Sources */,
