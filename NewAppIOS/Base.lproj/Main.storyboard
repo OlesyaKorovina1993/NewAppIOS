@@ -24,7 +24,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Check in"/>
                                         <connections>
-                                            <action selector="signinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ek4-er-2rf"/>
+                                            <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sv6-wI-irH"/>
                                             <segue destination="Spi-eO-sYk" kind="show" id="bH1-JT-jNa"/>
                                         </connections>
                                     </button>
@@ -171,7 +171,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFh-nN-BdX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFh-nN-BdX" userLabel="Sign In Button">
                                         <rect key="frame" x="0.0" y="280" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="4JE-90-3aD"/>

@@ -22,9 +22,11 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.alpha = 0 //скрыть label
 
         // Do any additional setup after loading the view.
     }
+  
     
 
     @IBAction func loginButtonPressed(_ sender: Any) {

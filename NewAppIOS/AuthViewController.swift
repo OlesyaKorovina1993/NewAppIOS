@@ -15,7 +15,8 @@ class AuthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signinPressed(_ sender: Any) {
+  
+    @IBAction func signInPressed(_ sender: Any) {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
