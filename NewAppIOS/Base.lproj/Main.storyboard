@@ -120,6 +120,30 @@
             </objects>
             <point key="canvasLocation" x="1839" y="428"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="XQw-Qq-cOa">
+            <objects>
+                <viewController storyboardIdentifier="PageVC" id="6tm-sN-FFR" customClass="PageViewController" customModule="NewAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Nk-Ds-5VQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57G-Fy-7oq">
+                                <rect key="frame" x="111" y="405" width="194" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Welcome!"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qg0-gh-t96"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ARW-YU-ys6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9D-jn-xtG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071.0144927536235" y="59.598214285714285"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="Oxu-Ty-S7U">
             <objects>
@@ -180,6 +204,7 @@
                                         <state key="normal" title="Check in"/>
                                         <connections>
                                             <action selector="signInButtonPressed:" destination="Spi-eO-sYk" eventType="touchUpInside" id="N9G-RZ-fQt"/>
+                                            <segue destination="6tm-sN-FFR" kind="show" id="AIm-ha-oxh"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwA-TT-PLp">

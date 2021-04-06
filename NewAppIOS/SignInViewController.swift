@@ -33,6 +33,7 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
     //проверка
     func checkValid() -> String? {
         if firstNameTextField.text == "" ||
@@ -51,8 +52,9 @@ class SignInViewController: UIViewController {
            
     }
     
-
-    @IBAction func signInButtonPressed(_ sender: Any) {
+    
+        @IBAction func signInButtonPressed(_ sender: Any) {
+        
         //проверка, есть ли значение в checkValid
         let error = checkValid()
         if error != nil {
@@ -61,28 +63,40 @@ class SignInViewController: UIViewController {
         }else{
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {(result, error) in
                 if error != nil {
-                    self.errorLabel.text! = "\(error?.localizedDescription)"
+                    //print("init 1")
+                    self.errorLabel.text! = "\(error!.localizedDescription)"
                 } else {
+                    //print(self.firstNameTextField.text!)
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: [
                         "name":self.firstNameTextField.text!,
                         "surname":self.lastNameTextField.text!,
+                        //"email":self.emailTextField.text!,
+                        //"password":self.passwordTextField.text!,
                         "uid": result!.user.uid
                     
                     
                     ]) { (error) in
                         if error != nil {
+                            print(error!)
                             self.errorLabel.text = "Error saving user in database"
                         }
                         print(result!.user.uid)
+                       
                     }
-                    print("Jump to the next screen")
                     
+                    //print("Jump to the next screen")
                 }
                 
             } //!принудительное извлечение/ можно делать так как выше была проверка
+            
+            }
+            
         }
+    
     }
+        
+
     
 
-}
+
